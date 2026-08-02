@@ -1,7 +1,28 @@
 aid: validit
 name: Valid.it
-description: Valid.it is a company surfaced as a portfolio company of techstars and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Valid.it (Validit.ai) is an AI-based fraud prevention SaaS that lets
+  enterprises, governments, and financial institutions validate users'
+  statements remotely and in real time through a standard smartphone, laptop,
+  or tablet camera. Its patented physio-behavioral AI combines computer vision,
+  signal processing, and PPG bio-signal analytics to detect deepfakes,
+  synthetic identities, and deceptive intent across onboarding, KYC/AML,
+  insurance claim verification, security vetting, and HR screening — delivered
+  as a standalone web-based solution or via API integration. A Techstars
+  portfolio company; no public developer portal or API documentation is
+  published.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://validit.ai/wp-content/uploads/2022/04/cropped-logo2-1.png
 url: https://raw.githubusercontent.com/api-evangelist/validit/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,10 +31,22 @@ x-backed-by:
 x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 4
+  pass: local-v1
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Fraud Prevention
+- Identity Verification
+- Deepfake Detection
+- Deception Detection
+- Artificial Intelligence
+- KYC
+- Security
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +54,29 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/validit-domain-security.yml
 - type: Website
   url: https://validit.ai/
+- type: Blog
+  url: https://validit.ai/latest-news/
+- type: BlogRSS
+  url: https://validit.ai/feed/
+- type: FAQ
+  url: https://validit.ai/faq/
+- type: Support
+  url: https://validit.ai/contact-us/
+- type: GitHubOrganization
+  url: https://github.com/ValidItAi
+- type: LinkedIn
+  url: https://www.linkedin.com/company/validitai/
+- type: TermsOfService
+  url: https://validit.ai/terms-of-use-agreement/
+- type: PrivacyPolicy
+  url: https://validit.ai/privacy-policy/
+- type: Conformance
+  url: conformance/validit-conformance.yml
+- type: Compliance
+  url: https://validit.ai/faq/
+- type: LLMsTxt
+  url: llms/validit-llms.txt

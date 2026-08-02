@@ -1,0 +1,67 @@
+generated: '2026-07-21'
+method: searched
+description: >-
+  Results of probing the /.well-known/ discovery surface for every Valid.it
+  host (website validit.ai, live API host api.validit.ai, web app
+  app.validit.ai). Status is the HTTP code observed at fetch time. No real
+  well-known document was found on any host: validit.ai and api.validit.ai
+  answer 404 everywhere, and app.validit.ai answers 200 with its text/html SPA
+  shell for every path (present-but-not-a-real-document, not saved). No
+  WellKnown pointer is wired in apis.yml because no genuine document exists.
+hosts:
+  - host: https://validit.ai
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+      - path: /llms.txt
+        status: 404
+  - host: https://api.validit.ai
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+        type: application/json
+        note: NestJS-style JSON 404 envelope.
+      - path: /.well-known/openid-configuration
+        status: 404
+        type: application/json
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+        type: application/json
+      - path: /.well-known/api-catalog
+        status: 404
+        type: application/json
+      - path: /.well-known/ai-plugin.json
+        status: 404
+        type: application/json
+  - host: https://app.validit.ai
+    documents:
+      - path: /.well-known/security.txt
+        status: 200
+        type: text/html
+        note: SPA shell, not a real security.txt; not saved.
+      - path: /.well-known/openid-configuration
+        status: 200
+        type: text/html
+        note: SPA shell, not a real OIDC discovery document; not saved.
+      - path: /.well-known/oauth-authorization-server
+        status: 200
+        type: text/html
+        note: SPA shell, not a real document; not saved.
+      - path: /.well-known/api-catalog
+        status: 200
+        type: text/html
+        note: SPA shell, not a real API catalog; not saved.
+      - path: /.well-known/ai-plugin.json
+        status: 200
+        type: text/html
+        note: SPA shell, not a real ai-plugin manifest; not saved.

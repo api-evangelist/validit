@@ -1,0 +1,27 @@
+# Valid.it
+
+> Valid.it (Validit.ai) is an AI-based fraud prevention SaaS that lets organizations validate users' statements remotely and in real time through a standard smartphone, laptop, or tablet camera. Its patented physio-behavioral AI combines computer vision, signal processing, and PPG bio-signal analytics to detect deepfakes, synthetic identities, and deceptive intent — delivered as a standalone web-based solution or via API integration. A Techstars portfolio company.
+
+Valid.it publishes no public developer portal, API reference, or OpenAPI specification. The FAQ documents API integration for onboarding flows, KYC/AML processes, insurance claim verification, HR candidate screening workflows, case-management systems, and government and security platforms; integration details require contacting the company (office@validit.ai). A production API host exists at api.validit.ai (structured JSON error envelope) but exposes no public spec or docs.
+
+## Company
+
+- [Website](https://validit.ai/): Validit.ai — AI-based fraud prevention technology
+- [Technology](https://validit.ai/technology/): Physio-behavioral AI, PPG bio-signals, real-time analytics
+- [Solutions](https://validit.ai/solutions/): Financial services, security vetting, homeland security, property management
+- [About](https://validit.ai/company/): Company background
+- [FAQ](https://validit.ai/faq/): Product, privacy/security (GDPR, SOC 2, data retention), and web-solution FAQs, including API integration
+- [Latest News](https://validit.ai/latest-news/): News and updates
+- [Research](https://validit.ai/research/): Research resources
+- [Contact](https://validit.ai/contact-us/): Book a demo, pricing estimates
+
+## Policies
+
+- [Terms of Use](https://validit.ai/terms-of-use-agreement/)
+- [Privacy Policy](https://validit.ai/privacy-policy/)
+- [Accessibility Statement](https://validit.ai/accessibility-statement/)
+
+## Catalog artifacts
+
+- [APIs.json profile](https://raw.githubusercontent.com/api-evangelist/validit/refs/heads/main/apis.yml)
+- [Conformance](https://raw.githubusercontent.com/api-evangelist/validit/refs/heads/main/conformance/validit-conformance.yml): Published compliance and security posture (SOC 2 audits, GDPR/PIPEDA/POPIA/APPI alignment, AES-256/TLS)

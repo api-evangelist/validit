@@ -1,0 +1,30 @@
+generated: '2026-07-21'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: validit.ai
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep 28 08:50:17 2026 GMT
+  hsts: false
+- host: api.validit.ai
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct 20 23:59:59 2026 GMT
+  hsts: false
+  note: Live production API host (NestJS-style JSON 404 envelope); no public spec or docs.
+- host: app.validit.ai
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Nov 9 23:59:59 2026 GMT
+  hsts: false
+  note: Web-based assessment app (React SPA on CloudFront).
+domains:
+- domain: validit.ai
+  dnssec: false
+  caa: []
+  spf: false
+  dmarc: false
+  txt_notes:
+  - amazonses domain verification present
+  - postman-domain-verification TXT present (no public Postman workspace found)
